@@ -30,9 +30,8 @@ public class Pelicula {
      */
     
     private ArrayList<Funcion>funciones;
-   
     
-     /**
+    /**
      * Inicializa los atributos de la clase pelicula
      * @param nombre
      * @param costoBase
@@ -44,7 +43,6 @@ public class Pelicula {
         this.costoBase = costoBase;
         this.funciones = new ArrayList<>();
     }
-    
     
     /**
      * Retorna el nombre de la pelicula
@@ -86,19 +84,11 @@ public class Pelicula {
         return funciones;
     }
     
-    
-     /**
+    /**
      * Modifica el arreglo de funciones
      * @param funciones
     */ 
     public void setFunciones(ArrayList<Funcion> funciones) {
         this.funciones = funciones;
-    }
-    
-    
-    
-    
-    
-    
-    
+    }  
 }

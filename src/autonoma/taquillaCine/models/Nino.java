@@ -39,6 +39,4 @@ public class Nino implements Usuario {
         
         return precioFinalNiño;
     }
-
-    
 }

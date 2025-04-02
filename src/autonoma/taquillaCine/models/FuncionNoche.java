@@ -14,7 +14,7 @@ public class FuncionNoche implements Funcion{
     /**
     * Porcentaje de descuento 
     */
-    final double PORCENTAJE_DESCUENTO = 0;
+    private final double PORCENTAJE_DESCUENTO = 0;
     /**
      * Inicializa la clase FuncionNoche
     */
@@ -24,7 +24,7 @@ public class FuncionNoche implements Funcion{
     /**
      * Sobreescribe el metodo de calcularDescuento
      * @param costoBase
-     * @return float
+     * @return double
     */
     @Override
     public double calcularDescuento(double costoBase) {
