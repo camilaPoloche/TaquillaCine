@@ -4,8 +4,10 @@
  */
 package autonoma.taquillaCine.models;
 /**
- *
- * @author maria
+ * Modelo que permite representar un decuento si es un  Mayor
+ * @author Mariana
+ * @since 20250402
+ * @version 1.0
  */
 public class Mayor implements Usuario {
     
