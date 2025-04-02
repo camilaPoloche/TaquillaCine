@@ -36,6 +36,7 @@ public class Pelicula {
      * Inicializa los atributos de la clase pelicula
      * @param nombre
      * @param costoBase
+     * @param funciones
      * 
     */
     public Pelicula(String nombre, double costoBase) {
