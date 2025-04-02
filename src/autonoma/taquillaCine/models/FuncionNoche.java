@@ -4,23 +4,23 @@
  */
 package autonoma.taquillaCine.models;
 /**
- * Modelo que permite representar una funcion de cine - Primera funcion
+ * Modelo que permite representar una funcion de cine - Funcion noche
  * @author Camila
  * @since 20250402
  * @version 1.0
  */
-public class PrimeraFuncion implements Funcion{
+public class FuncionNoche implements Funcion{
     //Constante
     /**
     * Porcentaje de descuento 
     */
-    final double PORCENTAJE_DESCUENTO = 0.5;
+    final double PORCENTAJE_DESCUENTO = 0;
     /**
-     * Inicializa la clase PrimeraFuncion
+     * Inicializa la clase FuncionNoche
     */
-    public PrimeraFuncion() {
+    public FuncionNoche() {
     }
-
+    
     /**
      * Sobreescribe el metodo de calcularDescuento
      * @param costoBase
