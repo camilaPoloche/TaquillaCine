@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package autonoma.taquillaCine.models;
-
 /**
  *
  * @author maria
@@ -36,7 +35,4 @@ public class Mayor implements Usuario {
         
         return precioFinalAdulto;
     }
-    
-    
-    
 }

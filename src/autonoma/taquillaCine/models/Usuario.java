@@ -11,14 +11,11 @@ package autonoma.taquillaCine.models;
  * @version 1.0
  */
 public interface Usuario {
-    
-    
     /**
      * Modela el metodo de aplicar el descuento
      * @param costoBase
      * @param funcion
      * @return float
     */
-    public abstract double aplicarDescuento(double costoBase, Funcion funcion);
-    
+    public abstract double aplicarDescuento(double costoBase, Funcion funcion); 
 }
