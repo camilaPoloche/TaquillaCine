@@ -1,31 +1,23 @@
-package autonoma.taquillaCine.models;
-
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-
+package autonoma.taquillaCine.models;
 /**
- * Modelo que permite representar un decuento si es un niño
+ * Modelo que permite representar un decuento si es un  Mayor
  * @author Mariana
  * @since 20250402
  * @version 1.0
  */
-public class Nino implements Usuario {
-    
-    //constante
+public class UsuarioMayor extends Usuario {
     /**
-    * cantidad de descuento si es un niño
-    */
-    final double CANTIDAD_DESCUENTO = 500;
-    
-    /**
-     * Inicializa la clase Nino
+     * Inicializa la clase Mayor
      *
     */
-    public Nino() {
+    public UsuarioMayor(){
+        super(1000);
     }
-
+    
     /**
      * Metodo abstracto aplicar descuento
      * @param costoBase
@@ -35,8 +27,8 @@ public class Nino implements Usuario {
     @Override
     public double aplicarDescuento(double costoBase, Funcion funcion) {
         double precioConDescuento = funcion.calcularDescuento(costoBase);
-        double precioFinalNiño = precioConDescuento - CANTIDAD_DESCUENTO;
+        double precioFinalAdulto = precioConDescuento - this.valorDescuento;
         
-        return precioFinalNiño;
+        return precioFinalAdulto;
     }
 }

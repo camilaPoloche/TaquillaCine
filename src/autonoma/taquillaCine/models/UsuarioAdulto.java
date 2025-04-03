@@ -10,20 +10,14 @@ package autonoma.taquillaCine.models;
  * @since 20250402
  * @version 1.0
  */
-public class Adulto implements Usuario {
-    //constante
-    /**
-    * cantidad de descuento si es un adulto
-    */
-    final double CANTIDAD_DESCUENTO = 0;
-    
+public class UsuarioAdulto extends Usuario {
     /**
      * Inicializa la clase adulto
      *
     */
-    public Adulto() {
+    public UsuarioAdulto(){
+        super(0);
     }
-    
     /**
      * Metodo abstracto aplicar descuento
      * @param costoBase
@@ -34,10 +28,8 @@ public class Adulto implements Usuario {
     @Override
     public double aplicarDescuento(double costoBase, Funcion funcion) {
         double precioConDescuento = funcion.calcularDescuento(costoBase);
-        double precioFinalAdulto = precioConDescuento - CANTIDAD_DESCUENTO;
+        double precioFinalAdulto = precioConDescuento - this.valorDescuento;
         
         return precioFinalAdulto;
-        
     }
-    
 }

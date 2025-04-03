@@ -4,8 +4,6 @@
  */
 package autonoma.taquillaCine.models;
 
-import java.util.ArrayList;
-
 /**
  * Modelo que permite representar una funcion de cine
  * @author Camila

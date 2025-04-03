@@ -4,8 +4,6 @@
  */
 package autonoma.taquillaCine.models;
 
-import java.util.ArrayList;
-
 /**
  * Modelo que permite representar un usuario
  * @author Mariana
@@ -13,34 +11,40 @@ import java.util.ArrayList;
  * @version 1.0
  */
 public class Venta {
-    
     /**
-     * arreglo de boletas
+     * boleta de tipo Boleta (instancia de boleta)
      */
-    private ArrayList<Boleta>boletas;
-    
-    
+    private Boleta boleta;
+
      /**
      * Inicializa los atributos de la clase Venta
-     * 
+     * @param boleta
     */
-    public Venta() {
-        this.boletas = new ArrayList<>();
+     public Venta(Boleta boleta) {
+        this.boleta = boleta;
     }
 
     /**
-     * Retorna el arreglo de boletas
-     * @return boletas
+     * Retorna el una boleta
+     * @return boleta
     */
-    public ArrayList<Boleta> getBoletas() {
-        return boletas;
+    public Boleta getBoleta() {
+        return boleta;
     }
-
+    
      /**
-     * Modifica el arreglo de boletas
-     * @param boletas
+     * Modifica una boleta
+     * @param boleta
+    */
+    public void setBoleta(Boleta boleta) {
+        this.boleta = boleta;
+    }
+    
+     /**
+     * Modifica la boleta
+     * @param boleta
     */ 
-    public void setBoletas(ArrayList<Boleta> boletas) {
-        this.boletas = boletas;
+    public void setBoletas(Boleta boleta) {
+        this.boleta = boleta;
     } 
 }
