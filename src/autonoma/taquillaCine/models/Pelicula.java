@@ -4,8 +4,6 @@
  */
 package autonoma.taquillaCine.models;
 
-import java.util.ArrayList;
-
 /**
  * Modelo que permite representar una pelicula
  * @author Mariana
@@ -13,7 +11,7 @@ import java.util.ArrayList;
  * @version 1.0
  */
 public class Pelicula {
-    //atributos 
+    //Atributos 
     
     /**
      * nombre de la pelicula
@@ -26,22 +24,14 @@ public class Pelicula {
     private double costoBase;
     
     /**
-     * arreglo de funciones
-     */
-    
-    private ArrayList<Funcion>funciones;
-    
-    /**
      * Inicializa los atributos de la clase pelicula
      * @param nombre
      * @param costoBase
-     * @param funciones
      * 
     */
     public Pelicula(String nombre, double costoBase) {
         this.nombre = nombre;
         this.costoBase = costoBase;
-        this.funciones = new ArrayList<>();
     }
     
     /**
@@ -75,20 +65,4 @@ public class Pelicula {
     public void setCostoBase(double costoBase) {
         this.costoBase = costoBase;
     }
-    
-    /**
-     * Retorna el arreglo de funciones
-     * @return funciones
-    */
-    public ArrayList<Funcion> getFunciones() {
-        return funciones;
-    }
-    
-    /**
-     * Modifica el arreglo de funciones
-     * @param funciones
-    */ 
-    public void setFunciones(ArrayList<Funcion> funciones) {
-        this.funciones = funciones;
-    }  
 }

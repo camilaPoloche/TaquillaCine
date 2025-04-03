@@ -3,13 +3,37 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package autonoma.taquillaCine.models;
+
+import java.util.ArrayList;
+
 /**
  * Modelo que permite representar una funcion de cine
  * @author Camila
  * @since 20250402
  * @version 1.0
  */
-public interface Funcion {
+public abstract class Funcion { 
+    //Atributos
+    /**
+     * Porcentaje de descuento
+    */
+    protected double porcentajeDescuento;
+    /**
+     * Instancia de pelicula
+    */
+    protected Pelicula pelicula;
+    
+    /**
+     * Inicializa los atributos de la clase Funcion
+     * @param porcentajeDescuento
+     * @param pelicula
+     * 
+    */
+    public Funcion(double porcentajeDescuento, Pelicula pelicula) {
+        this.porcentajeDescuento = porcentajeDescuento;
+        this.pelicula = pelicula;
+    }    
+    
     /**
      * Modela el metodo de calcularDescuento
      * @param costoBase

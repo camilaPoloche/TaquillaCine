@@ -9,16 +9,13 @@ package autonoma.taquillaCine.models;
  * @since 20250402
  * @version 1.0
  */
-public class FuncionTarde implements Funcion{
-    //Constante
-    /**
-    * Porcentaje de descuento 
-    */
-    private final double PORCENTAJE_DESCUENTO = 0.1;
+public class FuncionTarde extends Funcion{
     /**
      * Inicializa la clase FuncionTarde
+     * @param pelicula
     */
-    public FuncionTarde() {
+    public FuncionTarde(Pelicula pelicula){
+        super (0.1, pelicula);
     }
    
     /**
@@ -28,7 +25,7 @@ public class FuncionTarde implements Funcion{
     */
     @Override
     public double calcularDescuento(double costoBase) {
-        double descuento = costoBase * this.PORCENTAJE_DESCUENTO;
+        double descuento = costoBase * this.porcentajeDescuento;
         double precioFinal = costoBase - descuento;
         return precioFinal;
     }

@@ -42,14 +42,5 @@ public class Venta {
     */ 
     public void setBoletas(ArrayList<Boleta> boletas) {
         this.boletas = boletas;
-    }
-    
-    
-    
-   
-    
-    
-    
-    
-    
+    } 
 }

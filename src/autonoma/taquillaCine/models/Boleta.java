@@ -33,7 +33,7 @@ public class Boleta {
      * @return double
     */
     public double calcularPrecioTotal (){
-        double precioTotal = this.usuario.aplicarDescuento(pelicula.getCostoBase(), this.funcion);
+        precioTotal = this.usuario.aplicarDescuento(pelicula.getCostoBase(), this.funcion);
         return precioTotal;
     }
 }
