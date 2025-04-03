@@ -9,19 +9,14 @@ package autonoma.taquillaCine.models;
  * @since 20250402
  * @version 1.0
  */
-public class Mayor implements Usuario {
-    
-    //constante
-    /**
-    * cantidad de descuento si es un Mayor
-    */
-    final double CANTIDAD_DESCUENTO = 1000;
+public class Mayor extends Usuario {
     
     /**
      * Inicializa la clase Mayor
      *
     */
-    public Mayor() {
+    public Mayor(){
+        super(1000);
     }
     
     /**
@@ -33,7 +28,7 @@ public class Mayor implements Usuario {
     @Override
     public double aplicarDescuento(double costoBase, Funcion funcion) {
         double precioConDescuento = funcion.calcularDescuento(costoBase);
-        double precioFinalAdulto = precioConDescuento - CANTIDAD_DESCUENTO;
+        double precioFinalAdulto = precioConDescuento - this.valorDescuento;
         
         return precioFinalAdulto;
     }

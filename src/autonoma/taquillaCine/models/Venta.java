@@ -45,6 +45,19 @@ public class Venta {
     }
     
     
+    public boolean agregarBoleta(Boleta boleta){
+        for (int i = 0; i < boletas.size(); i++) {
+            if (boletas.get(i).getUsuario() == boleta.getUsuario()) {
+                return false; // Ya existe un libro con ese ID
+            }
+        }
+            return boletas.add(boleta);
+    }
+    
+    public boolean eliminarBoleta(Boleta boleta){
+        
+    }
+    
     
    
     

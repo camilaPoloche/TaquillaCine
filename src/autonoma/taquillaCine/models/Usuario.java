@@ -10,7 +10,40 @@ package autonoma.taquillaCine.models;
  * @since 20250402
  * @version 1.0
  */
-public interface Usuario {
+public abstract class Usuario {
+    
+    
+    /**
+     * porcentaje de descuento que depende del usuario
+     */
+    
+    protected double valorDescuento;
+
+    /**
+    * Inicializa los atributos de la clase Usuario
+    * @param valorDescuento
+    * 
+    */
+    public Usuario(double valorDescuento) {
+        this.valorDescuento = valorDescuento;
+    }
+
+    /**
+     * Retorna el valor de descuento
+     * @return valorDescuento
+    */
+    public double getValorDescuento() {
+        return valorDescuento;
+    }
+
+    /**
+     * Modifica el valor de descuento
+     * @param valorDescuento
+    */ 
+    public void setValorDescuento(double valorDescuento) {
+        this.valorDescuento = valorDescuento;
+    }
+    
     /**
      * Modela el metodo de aplicar el descuento
      * @param costoBase
