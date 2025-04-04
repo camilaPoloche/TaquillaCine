@@ -5,7 +5,7 @@
 package autonoma.taquillaCine.models;
 
 /**
- * Modelo que permite representar un usuario
+ * Modelo que permite representar una venta
  * @author Mariana
  * @since 20250402
  * @version 1.0
@@ -20,7 +20,7 @@ public class Venta {
      * Inicializa los atributos de la clase Venta
      * @param boleta
     */
-     public Venta(Boleta boleta) {
+    public Venta(Boleta boleta) {
         this.boleta = boleta;
     }
 

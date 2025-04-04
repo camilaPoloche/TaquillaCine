@@ -29,11 +29,88 @@ public class Boleta {
     private double precioTotal;
     
     /**
+     * Inicializa los atributos de la clase Boleta
+     * @param pelicula
+     * @param funcion
+     * @param usuario
+    */
+    public Boleta(Pelicula pelicula, Funcion funcion, Usuario usuario) {
+        this.pelicula = pelicula;
+        this.funcion = funcion;
+        this.usuario = usuario;
+        this.precioTotal = 0;
+    }
+    
+    /**
      * Calcula el precio total de la boleta
      * @return double
     */
     public double calcularPrecioTotal (){
-        precioTotal = this.usuario.aplicarDescuento(pelicula.getCostoBase(), this.funcion);
+        this.precioTotal = this.usuario.aplicarDescuento(pelicula.getCostoBase(), this.funcion);
         return precioTotal;
+    }
+
+    /**
+     * Retornar la instancia de pelicula
+     * @return pelicula
+    */
+    public Pelicula getPelicula() {
+        return pelicula;
+    }
+
+    /**
+     * Modificar la instancia de pelicula
+     * @param pelicula
+    */
+    public void setPelicula(Pelicula pelicula) {
+        this.pelicula = pelicula;
+    }
+
+    /**
+     * Retorna la instancia de funcion
+     * @return funcion
+    */
+    public Funcion getFuncion() {
+        return funcion;
+    }
+
+    /**
+     * Modificar la instancia de funcion
+     * @param funcion
+    */
+    public void setFuncion(Funcion funcion) {
+        this.funcion = funcion;
+    }
+
+    /**
+     * Retorna la instancia de funcion
+     * @return usuario
+    */
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    /**
+     * Modificar la instancia de usuario
+     * @param usuario
+    */
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+
+    /**
+     * Retorna el precioTotal
+     * @return precioTotal
+    */
+    public double getPrecioTotal() {
+        return precioTotal;
+    }
+
+    /**
+     * Modificar el precioTotal
+     * @param precioTotal
+    */
+    public void setPrecioTotal(double precioTotal) {
+        this.precioTotal = precioTotal;
     }
 }
