@@ -3,6 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package autonoma.taquillaCine.models;
+
+import autonoma.taquillaCine.exceptions.PrecioFinalInvalidoException;
+
 /**
  * Modelo que permite representar una Boleta
  * @author Camila
@@ -32,8 +35,13 @@ public class Boleta {
      * Calcula el precio total de la boleta
      * @return double
     */
-    public double calcularPrecioTotal (){
+    public double calcularPrecioTotal()  throws PrecioFinalInvalidoException {
         precioTotal = this.usuario.aplicarDescuento(pelicula.getCostoBase(), this.funcion);
+        
+        if (precioTotal <= 0) {
+        throw new PrecioFinalInvalidoException(); 
+    }
+    
         return precioTotal;
     }
 }

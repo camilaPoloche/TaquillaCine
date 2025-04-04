@@ -39,12 +39,5 @@ public class Venta {
     public void setBoleta(Boleta boleta) {
         this.boleta = boleta;
     }
-    
-     /**
-     * Modifica la boleta
-     * @param boleta
-    */ 
-    public void setBoletas(Boleta boleta) {
-        this.boleta = boleta;
-    } 
+   
 }
