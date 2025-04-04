@@ -8,6 +8,10 @@ package autonoma.taquillaCine.exceptions;
  *
  * @author maria
  */
-public class PrecioFinalInvalidoException {
+public class PrecioFinalInvalidoException extends Exception {
+    
+    public PrecioFinalInvalidoException(){
+        super("El precio de la excepcion debe de ser mayor a 0");
+    }
     
 }

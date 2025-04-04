@@ -13,7 +13,7 @@ package autonoma.taquillaCine.models;
  */
 public class UsuarioNino extends Usuario {
     /**
-     * Inicializa la clase Nino
+     * Inicializa la clase UsuarioNino
      *
     */
     public UsuarioNino(){

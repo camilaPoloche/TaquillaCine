@@ -24,23 +24,23 @@ public class Cine {
     */
     private ArrayList <Factura> facturas;
     
-    public Boleta venderBoleta (Pelicula pelicula, Funcion funcion, Usuario usuario){
-        if (cartelera.buscarPelicula(pelicula)){
-            double costoBase = pelicula.getCostoBase();
-            Boleta boletaNueva = new Boleta (pelicula, funcion, usuario);
-            boletaNueva.calcularPrecioTotal();
-            Venta ventaNueva = new Venta (boletaNueva);
-            this.facturas.agregarVenta (venta);
-            return boletaNueva;
-        }
-        return null;
-    }
-    
-    public String generarFactura(Venta venta) {
-        if (venta == null) {
-            return "No se puede generar la factura";
-        }
-        
-        
-    }
+//    public Boleta venderBoleta (Pelicula pelicula, Funcion funcion, Usuario usuario){
+//        if (cartelera.buscarPelicula(pelicula)){
+//            double costoBase = pelicula.getCostoBase();
+//            Boleta boletaNueva = new Boleta (pelicula, funcion, usuario);
+//            boletaNueva.calcularPrecioTotal();
+//            Venta ventaNueva = new Venta (boletaNueva);
+//            this.facturas.agregarVenta(ventaNueva);
+//            return boletaNueva;
+//        }
+//        return null;
+//    }
+//    
+//    public String generarFactura(Venta venta) {
+//        if (venta == null) {
+//            return "No se puede generar la factura";
+//        }
+//        
+//        
+//    }
 }

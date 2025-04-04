@@ -11,7 +11,7 @@ package autonoma.taquillaCine.models;
  */
 public class UsuarioMayor extends Usuario {
     /**
-     * Inicializa la clase Mayor
+     * Inicializa la clase UsuarioMayor
      *
     */
     public UsuarioMayor(){
@@ -27,8 +27,8 @@ public class UsuarioMayor extends Usuario {
     @Override
     public double aplicarDescuento(double costoBase, Funcion funcion) {
         double precioConDescuento = funcion.calcularDescuento(costoBase);
-        double precioFinalAdulto = precioConDescuento - this.valorDescuento;
+        double precioFinalMayor = precioConDescuento - this.valorDescuento;
         
-        return precioFinalAdulto;
+        return precioFinalMayor;
     }
 }
