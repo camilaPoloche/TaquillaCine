@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package autonoma.taquillaCine.models;
-
 /**
  * Modelo que permite representar un usuario
  * @author Mariana
@@ -11,18 +10,30 @@ package autonoma.taquillaCine.models;
  * @version 1.0
  */
 public abstract class Usuario {
+    //Atributos
     /**
      * porcentaje de descuento que depende del usuario
-     */
+    */
     protected double valorDescuento;
+    /**
+     * Tipo de usuario
+    */
+    protected String tipoUsuario;
+    /**
+     * Id del usuario
+    */
+    protected String id;
 
     /**
     * Inicializa los atributos de la clase Usuario
     * @param valorDescuento
-    * 
+    * @param tipo
+    * @param id
     */
-    public Usuario(double valorDescuento) {
+    public Usuario(double valorDescuento, String tipo, String id) {
         this.valorDescuento = valorDescuento;
+        this.tipoUsuario = tipo;
+        this.id = id;
     }
 
     /**
@@ -39,6 +50,30 @@ public abstract class Usuario {
     */ 
     public void setValorDescuento(double valorDescuento) {
         this.valorDescuento = valorDescuento;
+    }
+
+    /**
+     * Retorna el tipo de usuario
+     * @return tipoUsuario
+    */
+    public String getTipoUsuario() {
+        return tipoUsuario;
+    }
+
+    /**
+     * Modifica el tipo de usuario
+     * @param tipoUsuario
+    */ 
+    public void setTipoUsuario(String tipoUsuario) {
+        this.tipoUsuario = tipoUsuario;
+    }
+
+    /**
+     * Retorna el id del usuario
+     * @return id
+    */
+    public String getId() {
+        return id;
     }
     
     /**

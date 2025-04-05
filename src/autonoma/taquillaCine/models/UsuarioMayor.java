@@ -12,10 +12,10 @@ package autonoma.taquillaCine.models;
 public class UsuarioMayor extends Usuario {
     /**
      * Inicializa la clase UsuarioMayor
-     *
+     * @param id
     */
-    public UsuarioMayor(){
-        super(1000);
+    public UsuarioMayor(String id){
+        super(1000, "Usuario mayor", id);
     }
     
     /**

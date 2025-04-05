@@ -48,11 +48,25 @@ public class Cartelera {
     }
     
     /**
+     * Buscar una pelicula en el arreglo y retornarla
+     * @param pelicula
+     * @return Pelicula
+    */
+    public Pelicula obtenerPelicula (String pelicula){
+        for (int i = 0; i < this.peliculas.size(); i++){
+            if(pelicula.equals(this.peliculas.get(i).getNombre())){
+                return this.peliculas.get(i);
+            }
+        }
+        return null;
+    }
+    
+    /**
      * Agregar una pelicula nueva al arreglo
      * @param pelicula
      * @return boolean
     */
-    public boolean agregarPelcula (Pelicula pelicula){
+    public boolean agregarPelicula (Pelicula pelicula){
         if (buscarPelicula(pelicula)){
             return false;
         }

@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package autonoma.taquillaCine.models;
-
 /**
  * Modelo que permite representar una pelicula
  * @author Mariana
@@ -12,7 +11,6 @@ package autonoma.taquillaCine.models;
  */
 public class Pelicula {
     //Atributos 
-    
     /**
      * nombre de la pelicula
      */

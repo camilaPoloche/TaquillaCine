@@ -15,7 +15,7 @@ public class FuncionNoche extends Funcion{
      * @param pelicula
     */
     public FuncionNoche(Pelicula pelicula){
-        super (0, pelicula);
+        super (0, pelicula, "Funcion noche");
     }
     
     /**

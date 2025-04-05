@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package autonoma.taquillaCine.models;
-
 /**
  * Modelo que permite representar un decuento si es un adulto
  * @author Mariana
@@ -13,10 +12,10 @@ package autonoma.taquillaCine.models;
 public class UsuarioAdulto extends Usuario {
     /**
      * Inicializa la clase Usuarioadulto
-     *
+     * @param id
     */
-    public UsuarioAdulto(){
-        super(0);
+    public UsuarioAdulto(String id){
+        super(0, "Usuario adulto", id);
     }
     /**
      * Metodo abstracto aplicar descuento

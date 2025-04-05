@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package autonoma.taquillaCine.models;
-
 /**
  * Modelo que permite representar una venta
  * @author Mariana
@@ -11,12 +10,13 @@ package autonoma.taquillaCine.models;
  * @version 1.0
  */
 public class Venta {
+    //Atributos
     /**
      * boleta de tipo Boleta (instancia de boleta)
-     */
+    */
     private Boleta boleta;
 
-     /**
+    /**
      * Inicializa los atributos de la clase Venta
      * @param boleta
     */
@@ -32,7 +32,7 @@ public class Venta {
         return boleta;
     }
     
-     /**
+    /**
      * Modifica una boleta
      * @param boleta
     */
