@@ -149,4 +149,20 @@ public class Cine {
         }
         return null;
     }
+
+    /**
+     * Metodo que retorna la instancia de cartelera
+     * @return cartelera
+    */
+    public Cartelera getCartelera() {
+        return cartelera;
+    }
+
+    /**
+     * Modifica la instancia de cartelera
+     * @param cartelera
+    */
+    public void setCartelera(Cartelera cartelera) {
+        this.cartelera = cartelera;
+    }
 }
