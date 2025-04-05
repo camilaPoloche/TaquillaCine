@@ -45,7 +45,8 @@ public class TaquillaCine {
             System.out.println("4) Mostrar usuarios");
             System.out.println("5) Vender boleta");
             System.out.println("6) Generar factura");
-            System.out.println("7) Salir");
+            System.out.println("7) eliminar pelicula");
+            System.out.println("8) Salir");
             System.out.println("Ingrese una opcion: ");
             opcion = teclado.nextInt();
             teclado.nextLine();
@@ -176,7 +177,17 @@ public class TaquillaCine {
                     }
                     System.out.println(" ");
                 break;
+                
+                case 7:
+                    System.out.println("Ingrese el nombre de la pelicula que desea eliminar: ");
+                    String peliculaEliminar = teclado.nextLine();
+                    System.out.println("Ingrese el costo base de la pelicula que desea eliminar: ");
+                    double costoBaseEliminar = teclado.nextDouble();
+                    
+                    Pelicula pelicula = new Pelicula(peliculaEliminar, costoBaseEliminar);
+                    cine.getCartelera().eliminarPelicula(pelicula);
+                break; 
             }
-        } while (opcion != 7);
+        } while (opcion != 8);
     }
 }
